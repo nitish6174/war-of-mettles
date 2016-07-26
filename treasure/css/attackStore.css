@@ -1,0 +1,97 @@
+#attcontainer
+{	margin:10px auto;
+	display: block;
+	width: 450px;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	border:2px solid black;
+	border-radius:10px;
+	background: #C71818;
+}
+
+#attbuy
+{
+	margin: 10px auto;
+	width:94%;
+	height:55%;
+	border:1px solid black;
+	border-radius:10px;
+	padding:2px;
+	background:#A24242;
+}
+
+#attBuyTitle
+{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+	color:#FF1A00;
+}
+
+.attItems
+{
+	width: 100%;
+	display:flex; align-items: center; justify-content: space-around;
+}
+
+.attbuyitem
+{
+	margin:auto;
+	width:32%;
+	padding-top: 10px; padding-bottom: 10px;
+	height:90%;
+	border:2px solid black;
+	border-radius:5px;
+	background:#FA7C7C;
+}
+
+#attuse
+{
+	margin: 10px auto;
+	width:94%;
+	height:35%;
+	border:1px solid black;
+	border-radius:10px;
+	display: flex;
+	padding:2px;
+	background:#A24242;
+}
+
+.attuseitem{
+	margin:auto;
+	width:96%;
+	height:90%;
+	border:2px solid black;
+	border-radius:5px;
+	background:#FA7C7C;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+#saw{
+	margin-top:15px;
+	width:80px;
+	height:80px;
+}
+
+#hammer{
+	margin-top:15px;
+	width:80px;
+	height:80px;
+}
+
+#ball{
+	margin-top:15px;
+	width:85px;
+}
+
+#puzzleButton {
+	margin:10%;
+	width:50%;
+	font-size: 40px;
+}
+#puzzleButton:hover{
+	cursor: pointer;
+}

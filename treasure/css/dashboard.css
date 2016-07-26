@@ -1,0 +1,127 @@
+body 
+{
+	margin: 0px; padding: 0px;
+	background: #98D9E1;
+	text-align: center;
+	cursor: default;
+}
+::-webkit-scrollbar
+{ 
+    display: none; 
+}
+
+
+
+
+#menuBar
+{
+	padding-top: 10px; padding-bottom: 10px;
+	display: flex; justify-content: space-between;	align-items: center;
+	background-color: #222; color: white;
+	font-family: arial;	font-size: 20px;
+}
+.menuLeft { display: inline-flex; align-items: center; justify-content: space-around; width:25%; }
+.menuCenter { display: inline-flex; align-items: center; justify-content: space-around; width:50%; }
+.menuRight { display: inline-flex; align-items: center; justify-content: space-around; width:20%; }
+.menuBarOption { display: inline-flex;	align-items: center; justify-content: center; }
+.menuBarOption:hover { color: #ccc; cursor: pointer; }
+#pageTitle { font-size: 24px; }
+
+
+
+
+
+
+
+#infoBar
+{
+	padding-top: 10px; padding-bottom: 10px;
+	display: flex; align-items: center;	justify-content: space-around;
+	background-color: hsl(150,80%,50%); /*background-color: hsl(90,80%,80%); background-color: #1F0F38;	color: white;*/
+	font-size: 18px; font-family: arial;
+}
+.infoLeft { display: inline-flex; align-items: center; justify-content: space-around; width:25%; }
+.infoCenter { display: inline-flex; align-items: center; justify-content: space-around; width:30%; }
+.infoRight { display: inline-flex; align-items: center; justify-content: space-around; width:25%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrapper
+{
+	height: 500px;
+	display: flex;
+	margin:10px;
+	align-items: center;
+	justify-content: center;	
+}
+.title
+{
+	font: bold 20px Tahoma;
+	margin-bottom: 10px;	/*Edited*/
+}
+.section
+{
+	height:90%;	width:50%;
+	text-align: center;
+ }
+.box
+{
+	display: flex; align-items: center; justify-content: center;
+	height:450px;
+	width:450px;
+	margin: 0px auto; padding: 0px;
+	background: white;
+	border: 2px solid black;
+	-webkit-box-shadow: rgba(110,110,110,.6) 8px 5px 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+
+#toggle 
+{
+	margin-top: 25px;
+}
+.buttonBar
+{
+	display: inline-flex; justify-content: center; width: 49%;
+}
+.toggleButton 
+{
+	width:200px;
+	height: 50px;
+	font-size: 20px;
+}
+.toggleButton:hover { cursor: pointer; }
+
+
+#alertMessage
+{
+	margin-top: 10px;
+}
+.messageBar
+{
+	display: inline-flex; justify-content: center; width: 49%;
+}
+#defenceAlert , #attackAlert
+{
+	display: none;
+}

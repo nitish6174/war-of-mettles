@@ -1,0 +1,54 @@
+	#puzzlecontainer
+{	margin:10px auto;
+	display: block;
+	width: 450px;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	border:2px solid black;
+	border-radius:10px;
+	background: #C71818;
+	color: white;
+	font-size: 30px;
+}
+
+#innercontainer{
+	margin: 10px auto;
+	width:94%;
+	height:85%;
+	border:1px solid black;
+	border-radius:10px;
+	padding:2px;
+	background:#A24242;
+	color: yellow;
+	font-size: 20px;
+}
+
+
+.puzzleBox{
+	display: inline-block;
+	margin-top:8px;
+	width:30%;
+	height:45%;
+	border:2px solid black;
+	border-radius:5px;
+	background:#FA7C7C;
+}
+
+.puzzleButton
+{
+	margin-top: 5px;
+	width:80%;
+}
+.puzzleButton:hover{
+	cursor: pointer;
+}
+
+.btn-xs
+{
+	padding-top: 0x;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}

@@ -1,0 +1,60 @@
+*
+{
+	padding: 0px;	margin: 0px;
+}
+
+#container
+{
+	display: flex;
+	width: 450px;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	background: #C71818;
+}
+
+#islandsMaze
+{
+	display: table;
+	width: 350px;
+	height: 350px;
+	outline: 2px solid black;
+}
+
+#islandsMaze .r
+{
+	display: table-row;
+	width: 100%;
+	height: 10%;
+	outline: 1px solid black;
+}
+
+#islandsMaze .c
+{
+	display: table-cell;
+	width: 10%;
+	height: 10%;
+	outline: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ncell
+{
+	background: white;
+	font-weight: bold;
+	color: blue;
+}
+
+.default
+{
+	background: #938F94;
+}
+.white
+{
+	background: white;
+}
+.blue
+{
+	background: blue;
+}

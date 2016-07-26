@@ -1,0 +1,275 @@
+body
+{
+	margin: 0px; padding: 0px;
+	overflow-x: hidden;
+	background-color: #aaa;/*background-color: hsl(90,40%,80%);*/
+	cursor: default;
+}
+#menuBar,#infoBar,#scoreSection,#gameSection,#helpSection { font-size: 16px; }
+::-webkit-scrollbar
+{ 
+    display: none; 
+}
+
+
+
+
+
+
+
+/* Top 2 bars */
+
+
+
+#menuBar
+{
+	padding-top: 10px; padding-bottom: 10px;
+	display: flex; justify-content: space-between;	align-items: center;
+	background-color: #222; color: white;
+	font-family: arial;	font-size: 20px;	
+}
+.menuLeft { display: inline-flex; align-items: center; justify-content: space-around; width:25%; }
+.menuCenter { display: inline-flex; align-items: center; justify-content: space-around; width:45%; }
+.menuRight { display: inline-flex; align-items: center; justify-content: space-around; width:20%; }
+.menuBarOption { display: inline-flex;	align-items: center; justify-content: center; }
+.menuBarOption:hover { color: #ccc; cursor: pointer; }
+#pageTitle { font-size: 24px; }
+/*#logoutButton
+{ 
+	padding: 5px; padding-left: 8px; padding-right: 8px;
+	border: 0; box-shadow: 0; border-radius: 3px; 
+	background-color: hsl(0,0%,95%); color: black; font-weight: bold;
+}
+#logoutButton:hover { cursor: pointer; background-color: hsl(0,0%,85%); }*/
+
+
+
+
+
+#infoBar
+{
+	padding-top: 5px; padding-bottom: 5px;
+	display: flex; align-items: center;	justify-content: space-between;
+	background-color: hsl(90,80%,80%); /*hsl(100,60%,60%); box-shadow: 0px 3px 3px 0px hsl(100,60%,60%);*/
+	font-size: 18px; font-family: arial;
+}
+.infoLeft { display: inline-flex; align-items: center; justify-content: space-around; width:40%; }
+.infoCenter { display: inline-flex; align-items: center; justify-content: space-around; width:20%; }
+.infoRight { display: inline-flex; align-items: center; justify-content: space-around; width:40%; }
+/*#submitButton
+{ 
+	padding: 5px;
+	border: 0; box-shadow: 0; border-radius: 3px;
+	background-color: hsl(200,100%,45%);
+	color: white; font-weight: bold;
+}
+#submitButton:hover { cursor: pointer; background-color: hsl(200,100%,40%); }*/
+
+
+
+
+
+
+
+
+
+
+/* Score section i.e. left pane */
+
+
+#scoreSection
+{
+	padding-top: 50px;
+	display: flex; align-items: center; justify-content: center;
+	font-weight: 100;
+}
+.sSTitle 
+{ 
+	font-size: 21px; font-family: consolas; font-weight: bold;
+}
+.sSValue div
+{
+	display: inline-block;
+}
+.sSMultiplier { width: 30%; text-align: center; }
+.sSCount { width: 30%; text-align: center; color: blue; }
+.sSResult { width: 30%; text-align: center; color: green; }
+.gain .sSMultiplier , .gain .sSResult { color: #00aa11; }
+.loss .sSMultiplier , .loss .sSResult { color: #ff0000; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Game section i.e. center pane */
+
+
+#gameSection
+{
+	display: block;
+
+}
+#table1
+{
+	display: table;
+	max-width: 100%;
+	margin: 0 auto; margin-top: 20px;
+	background-color: white;	font-family: arial; font-weight: bold;
+}
+#table2
+{
+	display: table;
+	max-width: 100%;
+	margin: 0 auto; margin-top: 20px;
+	background-color: white;	font-family: arial; font-weight: bold;
+}
+
+/* Table rows */
+.t1Header	{ display: table-row;	width: 100%;	height: 45px;	font-size: 17px; }
+.t1Row		{ display: table-row;	width: 100%;	height: 45px; }
+.t2Row		{ display: table-row;	width: 100%;	height: 45px; }
+
+/* Table cells */
+.t1HeaderHeader , .t1RowHeader , .t2RowHeader	
+{
+	width: 160px;
+	display: table-cell; text-align: center; vertical-align: middle;
+}
+.t1HeaderCell , .t1Cell , .t2Cell
+{
+	width: 90px; 
+	display: table-cell; text-align: center; vertical-align: middle;
+}
+
+/* Table half-cells */
+.t1Early , .t1Late , .t2Early , .t2Late
+{
+	width: 45px; height: 45px;
+	display: table-cell; text-align: center; vertical-align: middle;
+}
+
+/* Border and color settings */
+.t1HeaderHeader { background-color: #aaa; }
+#t1Row1 .t1RowHeader { background-color: #444; color: hsl(210,100%,70%); }
+#t1Row2 .t1RowHeader { background-color: #444; color: hsl(300,100%,70%); } 
+#t1Row3 .t1RowHeader { background-color: #444; color: hsl(30,100%,70%); }
+#t1Row0 .t1HeaderCell   { background-color: #444; color: white; }
+.t2RowHeader { background-color: #ffc; }
+
+.t1HeaderCell,.t1RowHeader,.t1Cell,.t2RowHeader,.t2Cell
+{ outline: 1px solid #000; }
+#table2 { outline: 2px solid #000; }
+
+.t1Cell img
+{
+	display: block; width: 40px; height: 40px;
+	margin: auto auto;
+}
+.t2Cell img
+{
+	display: block; height: 38px; width: 38px;
+	margin: auto auto; border-radius: 2px;
+}
+
+
+
+
+.troopName
+{
+	width: 30%; height: 100%;
+	display: inline-flex; align-items: center; justify-content: center; float: left;
+	background-color: teal; color: #fff;
+}
+.troopArea
+{
+	width: 50%; height: 100%;
+	display: inline-flex; align-items: center; justify-content: center;
+}
+.troopArea div
+{
+	width: 20%; height: 50%;
+	display: flex; align-items: center; justify-content: center;
+	border: 1px inset black; border-radius: 4px; font-weight: 100;
+}
+.area1 { background-color: hsl(210,100%,70%); }
+.area2 { background-color: hsl(300,100%,70%); }
+.area3 { background-color: hsl(30,100%,70%); }
+.troopArea div:nth-child(2) { margin-left: 2px; margin-right: 2px; }
+.lateCount
+{
+	width: 20%; height: 100%;
+	display: inline-flex; align-items: center; justify-content: center; float: right;
+	
+}
+.lateCount span
+{
+	width: 70%; height: 70%;
+	display: inline-flex; align-items: center; justify-content: center;
+	background-color: #888; color: white; border-radius: 0px;
+	font-weight: 100;
+}
+.hiddenCard
+{
+	visibility: hidden;
+}
+
+
+
+
+.type1 { background: linear-gradient(to right,hsl(150,50%,30%) 50%,hsl(0,0%,100%) 50%); }
+.type2 { background: linear-gradient(to right,hsl(0,0%,100%) 50%,hsl(150,50%,30%) 50%);}
+.type3 { background-color: #666; }
+.type4 { background-color: #111; }
+.highlightedCell { box-shadow: 0px 0px 5px 3px yellow inset; }
+.selected img { opacity: 0.5; }
+
+
+
+
+
+
+
+
+
+
+/* Help section i.e. right pane */
+
+#helpSection
+{
+	overflow: auto; width: 100%;
+	display: flex; align-items: center; justify-content: center;	
+}
+#helpBox
+{
+	width: 100%; margin: 0% auto;
+	background-color: hsl(0,0%,20%);
+	text-align: center;
+}
+#helpTitle
+{
+	margin: 0; height: 50px;
+	display: flex;  align-items: center; justify-content: center;
+	color: white;	font-family: calibri;	font-size: 18px; 
+}
+
+#helpList div
+{
+	width: 90%;	margin: 8px auto; padding: 2% 4%;
+	background-color: hsl(60,100%,90%);
+	border: 0px solid hsl(60,100%,40%); border-radius: 5px;
+	font-family: tahoma; font-size: 13px; letter-spacing: 0px; word-spacing: -1px; text-align: justify;
+}
+
+
+
+
+/*	Modals	*/
+
+.table td , .table th { text-align: center; }

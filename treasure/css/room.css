@@ -1,0 +1,40 @@
+
+*
+{
+	padding: 0px;	margin: 0px;
+}
+
+.container
+{
+	display: flex;
+	width: 450px;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+}
+
+#defMaze,#attMaze
+{
+	display: table;
+	width: 400px;
+	height: 400px;
+	outline: 2px solid black;
+}
+
+.r
+{
+	display: table-row;
+	width: 100%;
+	height: 10%;
+	outline: 1px solid black;
+}
+
+.c
+{
+	display: table-cell;
+	width: 10%;
+	height: 10%;
+	outline: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+}
